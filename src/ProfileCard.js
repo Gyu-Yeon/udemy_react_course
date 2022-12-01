@@ -1,9 +1,13 @@
 function ProfileCard(props) {
-  const { number } = props;
+  const { data } = props;
   return (
     <div>
-      Profile Card
-      {number}
+      <div>
+        <img src={data.img} alt="logo" />
+      </div>
+      <h1>{data.title}</h1>
+      <h3>{data.tag}</h3>
+      <h1>{data.definition}</h1>
     </div>
   );
 }
